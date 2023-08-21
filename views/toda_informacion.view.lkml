@@ -74,6 +74,12 @@ view: toda_informacion {
     sql: ${TABLE}.UF_m2 ;;
   }
 
+  measure: promedio {
+    type: average
+    sql: ${uf_m2} ;;
+    description: "promedio uf/m2"
+    label: "Promedio uf/m2"
+  }
   set: detail {
     fields: [
         banios,
