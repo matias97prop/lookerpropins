@@ -4,6 +4,7 @@ connection: "informes_junio"
 
 include: "/views/mayo_2023_vw.view.lkml"
 include: "/views/dormitorios.view.lkml"
+include: "/views/toda_informacion.view.lkml"
 # include: "/**/*.view.lkml"                 # include all views in this project
 # include: "my_dashboard.dashboard.lookml"   # include a LookML dashboard called my_dashboard
 
@@ -24,3 +25,4 @@ include: "/views/dormitorios.view.lkml"
 explore: dormitorios{
 }
 explore: mayo_2023_vw {}
+explore: toda_informacion {}
