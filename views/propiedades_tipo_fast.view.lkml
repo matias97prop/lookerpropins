@@ -1,5 +1,5 @@
 
-view: propiedades_fast_test1 {
+view: propiedades_tipo_fast {
   derived_table: {
     sql: SELECT * FROM [propins-web:propiedades_fast.propiedades_fast_test] ;;
   }
@@ -10,7 +10,7 @@ view: propiedades_fast_test1 {
   }
 
   dimension: index {
-    type: string
+    type: number
     sql: ${TABLE}.index ;;
   }
 
@@ -99,26 +99,38 @@ view: propiedades_fast_test1 {
     sql: ${TABLE}.Area_Verde ;;
   }
 
+  dimension: x {
+    type: number
+    sql: ${TABLE}.X ;;
+  }
+
+  dimension: y {
+    type: number
+    sql: ${TABLE}.Y ;;
+  }
+
   set: detail {
     fields: [
         index,
-  comunas,
-  links,
-  precio,
-  superficie_total,
-  superficie_util,
-  dormitorios,
-  banos,
-  estacionamientos,
-  barrio,
-  tipo_propiedad,
-  uf_m2,
-  porcentaje_bajo_promedio,
-  arriendo,
-  rentabilidad,
-  seguridad,
-  transporte,
-  area_verde
+	comunas,
+	links,
+	precio,
+	superficie_total,
+	superficie_util,
+	dormitorios,
+	banos,
+	estacionamientos,
+	barrio,
+	tipo_propiedad,
+	uf_m2,
+	porcentaje_bajo_promedio,
+	arriendo,
+	rentabilidad,
+	seguridad,
+	transporte,
+	area_verde,
+	x,
+	y
     ]
   }
 }
