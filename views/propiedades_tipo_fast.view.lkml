@@ -1,7 +1,7 @@
 
 view: propiedades_tipo_fast {
   derived_table: {
-    sql: SELECT * FROM [propins-web:propiedades_fast.propiedades_fast_test] ;;
+    sql: SELECT index,Comunas,Links,Precio,Superficie_Total,Superficie_util,Dormitorios,Banos,Estacionamientos,Barrio,Tipo_propiedad,UF_m2,Porcentaje_bajo_promedio,Arriendo,Rentabilidad FROM [propins-web:propiedades_fast.propiedades_fast_test] ;;
   }
 
   measure: count {
@@ -112,25 +112,25 @@ view: propiedades_tipo_fast {
   set: detail {
     fields: [
         index,
-	comunas,
-	links,
-	precio,
-	superficie_total,
-	superficie_util,
-	dormitorios,
-	banos,
-	estacionamientos,
-	barrio,
-	tipo_propiedad,
-	uf_m2,
-	porcentaje_bajo_promedio,
-	arriendo,
-	rentabilidad,
-	seguridad,
-	transporte,
-	area_verde,
-	x,
-	y
+  comunas,
+  links,
+  precio,
+  superficie_total,
+  superficie_util,
+  dormitorios,
+  banos,
+  estacionamientos,
+  barrio,
+  tipo_propiedad,
+  uf_m2,
+  porcentaje_bajo_promedio,
+  arriendo,
+  rentabilidad,
+  seguridad,
+  transporte,
+  area_verde,
+  x,
+  y
     ]
   }
 }
