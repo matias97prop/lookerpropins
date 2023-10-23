@@ -35,3 +35,6 @@ explore: localizacion {
     sql_on: ${propiedades_tipo_fast.links}=${localizacion.links} ;;
   }
 }
+map_layer:  comunas{
+  file: "/models/comunas.geojson"
+}
