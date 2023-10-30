@@ -38,3 +38,6 @@ explore: localizacion {
 map_layer:  comunas{
   file: "/models/comunas.geojson"
 }
+map_layer:  regiones{
+  file: "/models/Regional.geojson"
+}
