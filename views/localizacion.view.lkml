@@ -37,6 +37,7 @@ view: localizacion {
   dimension: loc {
     type: string
     sql: ${TABLE}.loc ;;
+    map_layer_name: comunas
   }
 
   set: detail {
