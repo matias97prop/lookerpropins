@@ -40,6 +40,12 @@ view: localizacion {
     map_layer_name: comunas
   }
 
+  dimension: Region {
+    type: string
+    sql: ${TABLE}.Region ;;
+    map_layer_name: regiones
+  }
+
   set: detail {
     fields: [
         index,
@@ -47,7 +53,8 @@ view: localizacion {
   seguridad,
   transporte,
   area_verde,
-  loc
+  loc,
+  Region
     ]
   }
 }
