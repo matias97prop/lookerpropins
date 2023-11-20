@@ -37,13 +37,11 @@ view: localizacion {
   dimension: loc {
     type: string
     sql: ${TABLE}.loc ;;
-    map_layer_name: comunas
   }
 
   dimension: Region {
     type: string
     sql: ${TABLE}.Region ;;
-    map_layer_name: regiones
   }
 
   dimension: localizacion_x {
@@ -56,7 +54,7 @@ view: localizacion {
     sql: ${TABLE}.localizacion_y ;;
   }
 
-  dimension: localizacion {
+  dimension: localizacion_loc {
     type: location
     sql_latitude: ${TABLE}.localizacion_x ;;
     sql_longitude: ${TABLE}.localizacion_y ;;
