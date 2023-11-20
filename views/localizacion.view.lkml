@@ -46,6 +46,22 @@ view: localizacion {
     map_layer_name: regiones
   }
 
+  dimension: localizacion_x {
+    type: string
+    sql: ${TABLE}.localizacion_x ;;
+  }
+
+  dimension: localizacion_y {
+    type: string
+    sql: ${TABLE}.localizacion_y ;;
+  }
+
+  dimension: localizacion {
+    type: location
+    sql_latitude: ${TABLE}.localizacion_x ;;
+    sql_longitude: ${TABLE}.localizacion_y ;;
+  }
+
   set: detail {
     fields: [
         index,
@@ -54,7 +70,9 @@ view: localizacion {
   transporte,
   area_verde,
   loc,
-  Region
+  Region,
+  localizacion_x,
+  localizacion_y
     ]
   }
 }
