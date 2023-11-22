@@ -1,7 +1,7 @@
 view: mayo_2023_vw {
   derived_table: {
     sql: SELECT * FROM [propins-web:informes_mayo_2023.mayo_2023] WHERE
-      Comuna ='Independencia'AND Barrio='Hospitales' AND TipoPropiedad='Departamento' ;;
+       TipoPropiedad='Departamento' ;;
   }
 
   measure: count {
