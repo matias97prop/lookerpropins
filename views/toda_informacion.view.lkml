@@ -1,7 +1,7 @@
 
 view: toda_informacion {
   derived_table: {
-    sql: SELECT * FROM [propins-web:informes_mayo_2023.junio_2023] ;;
+    sql: SELECT * FROM [propins-web:informes_mayo_2023.junio_2023];;
   }
 
   measure: count {
