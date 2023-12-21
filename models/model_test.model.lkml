@@ -27,11 +27,17 @@ include: "/views/localizacion.view.lkml"
 explore: dormitorios{
 }
 explore: mayo_2023_vw {}
-explore: toda_informacion {}
+#explore: toda_informacion {}
 explore: propiedades_tipo_fast {}
 explore: localizacion {
   join: propiedades_tipo_fast {
     relationship: many_to_one
     sql_on: ${propiedades_tipo_fast.links}=${localizacion.links} ;;
+  }
+}
+explore: toda_informacion {
+  join: propiedades_tipo_fast {
+    relationship: many_to_many
+    sql_on: ${propiedades_tipo_fast.barrio}=${toda_informacion.barrio} and ${propiedades_tipo_fast.dormitorios}=${toda_informacion.dormitorios} and ${propiedades_tipo_fast.banos}=${toda_informacion.banios};;
   }
 }
