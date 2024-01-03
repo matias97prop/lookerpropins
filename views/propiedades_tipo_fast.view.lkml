@@ -4,9 +4,9 @@ view: propiedades_tipo_fast {
     sql: SELECT index,Comunas,Links,Precio,Superficie_Total,Superficie_util,Dormitorios,Banos,Estacionamientos,Barrio,Tipo_propiedad,UF_m2,Porcentaje_bajo_promedio,Arriendo,Rentabilidad FROM [propins-web:propiedades_fast.propiedades_fast_test] ;;
   }
 
-  measure: count {
-    type: count
-    drill_fields: [detail*]
+  measure: BajoPromedio{
+    type: percent_of_total
+    drill_fields: [porcentaje_bajo_promedio]
   }
 
   dimension: index {
