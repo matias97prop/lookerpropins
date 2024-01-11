@@ -112,6 +112,18 @@ view: propiedades_tipo_fast {
     type: number
     sql: ${TABLE}.Y ;;
   }
+  measure: porcentajebajo{
+    type: number
+    sql: ${porcentaje_bajo_promedio} * 100 ;;
+    label: "% Bajo Promedio"
+    value_format: "0.00\%"
+  }
+  measure: Rentabilidad_cal{
+    type: number
+    sql: ${rentabilidad} * 100 ;;
+    label: "Rentabilidad"
+    value_format: "0.00\%"
+  }
 
   set: detail {
     fields: [
