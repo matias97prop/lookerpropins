@@ -21,6 +21,9 @@ view: propiedades_tipo_fast {
   dimension: links {
     type: string
     sql: ${TABLE}.Links ;;
+    link: {
+      label: "Search the web"
+    }
   }
 
   dimension: precio {
