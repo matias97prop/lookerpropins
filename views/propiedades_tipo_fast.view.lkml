@@ -23,7 +23,7 @@ view: propiedades_tipo_fast {
     sql: ${TABLE}.Links ;;
     link: {
       label: "Search the web"
-      url: "{value}"
+      url: "{url_encode}"
       icon_url: "http://www.google.com/s2/favicons?domain=www.{{ value | url_encode }}.com"
     }
   }
